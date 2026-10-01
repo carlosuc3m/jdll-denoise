@@ -1,0 +1,374 @@
+{
+  "bm3d_bm4d": {
+    "quick": {
+      "method": "bm3d_bm4d",
+      "effort": "quick",
+      "device": "cpu",
+      "device_requested": "cpu",
+      "device_warning": null,
+      "dimensions": "2d",
+      "dimensions_requested": "auto",
+      "axes": "yx",
+      "seed": 5489,
+      "normalization": {
+        "mode": "percentile",
+        "low": 0.1,
+        "high": 99.9,
+        "per_channel": true,
+        "clip": true
+      },
+      "tiling": {
+        "enabled": false,
+        "tile_size": 512,
+        "overlap": 32,
+        "blend": "gaussian",
+        "batch_size": 1
+      },
+      "method_config": {
+        "profile": "np",
+        "stages": "hard_thresholding",
+        "sigma": "auto",
+        "report_interval": 10
+      },
+      "allow_cpu_fallback": false,
+      "channel_mode": "auto",
+      "extensions": {},
+      "estimated_memory_bytes": 6144,
+      "cancellation_granularity": "stage"
+    },
+    "balanced": {
+      "method": "bm3d_bm4d",
+      "effort": "balanced",
+      "device": "cpu",
+      "device_requested": "cpu",
+      "device_warning": null,
+      "dimensions": "2d",
+      "dimensions_requested": "auto",
+      "axes": "yx",
+      "seed": 5489,
+      "normalization": {
+        "mode": "percentile",
+        "low": 0.1,
+        "high": 99.9,
+        "per_channel": true,
+        "clip": true
+      },
+      "tiling": {
+        "enabled": false,
+        "tile_size": 512,
+        "overlap": 32,
+        "blend": "gaussian",
+        "batch_size": 1
+      },
+      "method_config": {
+        "profile": "np",
+        "stages": "all",
+        "sigma": "auto",
+        "report_interval": 10
+      },
+      "allow_cpu_fallback": false,
+      "channel_mode": "auto",
+      "extensions": {},
+      "estimated_memory_bytes": 6144,
+      "cancellation_granularity": "stage"
+    },
+    "thorough": {
+      "method": "bm3d_bm4d",
+      "effort": "thorough",
+      "device": "cpu",
+      "device_requested": "cpu",
+      "device_warning": null,
+      "dimensions": "2d",
+      "dimensions_requested": "auto",
+      "axes": "yx",
+      "seed": 5489,
+      "normalization": {
+        "mode": "percentile",
+        "low": 0.1,
+        "high": 99.9,
+        "per_channel": true,
+        "clip": true
+      },
+      "tiling": {
+        "enabled": false,
+        "tile_size": 512,
+        "overlap": 32,
+        "blend": "gaussian",
+        "batch_size": 1
+      },
+      "method_config": {
+        "profile": "high",
+        "stages": "all",
+        "sigma": "auto",
+        "report_interval": 10
+      },
+      "allow_cpu_fallback": false,
+      "channel_mode": "auto",
+      "extensions": {},
+      "estimated_memory_bytes": 6144,
+      "cancellation_granularity": "stage"
+    }
+  },
+  "noise2fast": {
+    "quick": {
+      "method": "noise2fast",
+      "effort": "quick",
+      "device": "cpu",
+      "device_requested": "cpu",
+      "device_warning": null,
+      "dimensions": "2d",
+      "dimensions_requested": "auto",
+      "axes": "yx",
+      "seed": 5489,
+      "normalization": {
+        "mode": "percentile",
+        "low": 0.0,
+        "high": 100.0,
+        "per_channel": true,
+        "clip": true
+      },
+      "tiling": {
+        "enabled": false,
+        "tile_size": 512,
+        "overlap": 32,
+        "blend": "gaussian",
+        "batch_size": 1
+      },
+      "method_config": {
+        "hidden_width": 16,
+        "patience": 50,
+        "steps": 0,
+        "report_interval": 10,
+        "output_window": 100
+      },
+      "allow_cpu_fallback": false,
+      "channel_mode": "auto",
+      "extensions": {},
+      "estimated_memory_bytes": 18432,
+      "cancellation_granularity": "optimization_step"
+    },
+    "balanced": {
+      "method": "noise2fast",
+      "effort": "balanced",
+      "device": "cpu",
+      "device_requested": "cpu",
+      "device_warning": null,
+      "dimensions": "2d",
+      "dimensions_requested": "auto",
+      "axes": "yx",
+      "seed": 5489,
+      "normalization": {
+        "mode": "percentile",
+        "low": 0.0,
+        "high": 100.0,
+        "per_channel": true,
+        "clip": true
+      },
+      "tiling": {
+        "enabled": false,
+        "tile_size": 512,
+        "overlap": 32,
+        "blend": "gaussian",
+        "batch_size": 1
+      },
+      "method_config": {
+        "hidden_width": 24,
+        "patience": 100,
+        "steps": 0,
+        "report_interval": 10,
+        "output_window": 100
+      },
+      "allow_cpu_fallback": false,
+      "channel_mode": "auto",
+      "extensions": {},
+      "estimated_memory_bytes": 18432,
+      "cancellation_granularity": "optimization_step"
+    },
+    "thorough": {
+      "method": "noise2fast",
+      "effort": "thorough",
+      "device": "cpu",
+      "device_requested": "cpu",
+      "device_warning": null,
+      "dimensions": "2d",
+      "dimensions_requested": "auto",
+      "axes": "yx",
+      "seed": 5489,
+      "normalization": {
+        "mode": "percentile",
+        "low": 0.0,
+        "high": 100.0,
+        "per_channel": true,
+        "clip": true
+      },
+      "tiling": {
+        "enabled": false,
+        "tile_size": 512,
+        "overlap": 32,
+        "blend": "gaussian",
+        "batch_size": 1
+      },
+      "method_config": {
+        "hidden_width": 64,
+        "patience": 100,
+        "steps": 0,
+        "report_interval": 10,
+        "output_window": 100
+      },
+      "allow_cpu_fallback": false,
+      "channel_mode": "auto",
+      "extensions": {},
+      "estimated_memory_bytes": 18432,
+      "cancellation_granularity": "optimization_step"
+    }
+  },
+  "structn2v": {
+    "quick": {
+      "method": "structn2v",
+      "effort": "quick",
+      "device": "cpu",
+      "device_requested": "cpu",
+      "device_warning": null,
+      "dimensions": "2d",
+      "dimensions_requested": "auto",
+      "axes": "yx",
+      "seed": 5489,
+      "normalization": {
+        "mode": "percentile",
+        "low": 0.1,
+        "high": 99.9,
+        "per_channel": true,
+        "clip": false
+      },
+      "tiling": {
+        "enabled": false,
+        "tile_size": 512,
+        "overlap": 32,
+        "blend": "gaussian",
+        "batch_size": 1
+      },
+      "method_config": {
+        "architecture": "paper_unet",
+        "mask_fraction": 0.02,
+        "correlation_radius": 4,
+        "period": 4,
+        "patch_size": [
+          256,
+          256
+        ],
+        "patch_count": 1600,
+        "batch_size": 4,
+        "learning_rate": 2e-05,
+        "epochs": 600,
+        "steps": 0,
+        "neighborhood_radius": 5,
+        "selection_steps": 8,
+        "noise_structure": "auto",
+        "report_interval": 10
+      },
+      "allow_cpu_fallback": false,
+      "channel_mode": "auto",
+      "extensions": {},
+      "estimated_memory_bytes": 18432,
+      "cancellation_granularity": "optimization_step"
+    },
+    "balanced": {
+      "method": "structn2v",
+      "effort": "balanced",
+      "device": "cpu",
+      "device_requested": "cpu",
+      "device_warning": null,
+      "dimensions": "2d",
+      "dimensions_requested": "auto",
+      "axes": "yx",
+      "seed": 5489,
+      "normalization": {
+        "mode": "percentile",
+        "low": 0.1,
+        "high": 99.9,
+        "per_channel": true,
+        "clip": false
+      },
+      "tiling": {
+        "enabled": false,
+        "tile_size": 512,
+        "overlap": 32,
+        "blend": "gaussian",
+        "batch_size": 1
+      },
+      "method_config": {
+        "architecture": "paper_unet",
+        "mask_fraction": 0.02,
+        "correlation_radius": 4,
+        "period": 4,
+        "patch_size": [
+          256,
+          256
+        ],
+        "patch_count": 1600,
+        "batch_size": 4,
+        "learning_rate": 2e-05,
+        "epochs": 600,
+        "steps": 0,
+        "neighborhood_radius": 5,
+        "selection_steps": 8,
+        "noise_structure": "auto",
+        "report_interval": 10
+      },
+      "allow_cpu_fallback": false,
+      "channel_mode": "auto",
+      "extensions": {},
+      "estimated_memory_bytes": 18432,
+      "cancellation_granularity": "optimization_step"
+    },
+    "thorough": {
+      "method": "structn2v",
+      "effort": "thorough",
+      "device": "cpu",
+      "device_requested": "cpu",
+      "device_warning": null,
+      "dimensions": "2d",
+      "dimensions_requested": "auto",
+      "axes": "yx",
+      "seed": 5489,
+      "normalization": {
+        "mode": "percentile",
+        "low": 0.1,
+        "high": 99.9,
+        "per_channel": true,
+        "clip": false
+      },
+      "tiling": {
+        "enabled": false,
+        "tile_size": 512,
+        "overlap": 32,
+        "blend": "gaussian",
+        "batch_size": 1
+      },
+      "method_config": {
+        "architecture": "paper_unet",
+        "mask_fraction": 0.02,
+        "correlation_radius": 4,
+        "period": 4,
+        "patch_size": [
+          256,
+          256
+        ],
+        "patch_count": 1600,
+        "batch_size": 4,
+        "learning_rate": 2e-05,
+        "epochs": 600,
+        "steps": 0,
+        "neighborhood_radius": 5,
+        "selection_steps": 8,
+        "noise_structure": "auto",
+        "report_interval": 10
+      },
+      "allow_cpu_fallback": false,
+      "channel_mode": "auto",
+      "extensions": {},
+      "estimated_memory_bytes": 18432,
+      "cancellation_granularity": "optimization_step"
+    }
+  }
+}

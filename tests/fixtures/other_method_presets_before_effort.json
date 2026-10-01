@@ -1,0 +1,113 @@
+{
+  "bm3d_bm4d": {
+    "quick": {
+      "profile": "np",
+      "stages": "hard_thresholding",
+      "sigma": "auto",
+      "report_interval": 10
+    },
+    "balanced": {
+      "profile": "np",
+      "stages": "all",
+      "sigma": "auto",
+      "report_interval": 10
+    },
+    "thorough": {
+      "profile": "high",
+      "stages": "all",
+      "sigma": "auto",
+      "report_interval": 10
+    }
+  },
+  "zs_n2n": {
+    "quick": {
+      "steps": 1000,
+      "learning_rate": 0.001,
+      "hidden_width": 48,
+      "scheduler_step_size": 1000,
+      "scheduler_gamma": 0.5,
+      "early_stopping": false,
+      "restore_best_weights": false,
+      "report_interval": 10
+    },
+    "balanced": {
+      "steps": 2000,
+      "learning_rate": 0.001,
+      "hidden_width": 48,
+      "scheduler_step_size": 1000,
+      "scheduler_gamma": 0.5,
+      "early_stopping": false,
+      "restore_best_weights": false,
+      "report_interval": 10
+    },
+    "thorough": {
+      "steps": 3000,
+      "learning_rate": 0.001,
+      "hidden_width": 48,
+      "scheduler_step_size": 1000,
+      "scheduler_gamma": 0.5,
+      "early_stopping": false,
+      "restore_best_weights": false,
+      "report_interval": 10
+    }
+  },
+  "structn2v": {
+    "quick": {
+      "architecture": "paper_unet",
+      "mask_fraction": 0.02,
+      "correlation_radius": 4,
+      "period": 4,
+      "patch_size": [
+        256,
+        256
+      ],
+      "patch_count": 1600,
+      "batch_size": 4,
+      "learning_rate": 0.00002,
+      "epochs": 600,
+      "steps": 0,
+      "neighborhood_radius": 5,
+      "selection_steps": 8,
+      "noise_structure": "auto",
+      "report_interval": 10
+    },
+    "balanced": {
+      "architecture": "paper_unet",
+      "mask_fraction": 0.02,
+      "correlation_radius": 4,
+      "period": 4,
+      "patch_size": [
+        256,
+        256
+      ],
+      "patch_count": 1600,
+      "batch_size": 4,
+      "learning_rate": 0.00002,
+      "epochs": 600,
+      "steps": 0,
+      "neighborhood_radius": 5,
+      "selection_steps": 8,
+      "noise_structure": "auto",
+      "report_interval": 10
+    },
+    "thorough": {
+      "architecture": "paper_unet",
+      "mask_fraction": 0.02,
+      "correlation_radius": 4,
+      "period": 4,
+      "patch_size": [
+        256,
+        256
+      ],
+      "patch_count": 1600,
+      "batch_size": 4,
+      "learning_rate": 0.00002,
+      "epochs": 600,
+      "steps": 0,
+      "neighborhood_radius": 5,
+      "selection_steps": 8,
+      "noise_structure": "auto",
+      "report_interval": 10
+    }
+  }
+}
